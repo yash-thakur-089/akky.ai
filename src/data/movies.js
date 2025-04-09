@@ -81,7 +81,7 @@ export const comingSoon = [
   {
     id: 102,
     title: "Avengers: Secret Wars",
-    poster: "/images/secretwars.png",
+    poster: "/images/avengers.png",
     releaseDate: "May 1, 2026"
   },
   
@@ -94,14 +94,14 @@ export const comingSoon = [
   {
     id: 105,
     title: "Moana 2",
-    poster: "/images/secretwars.png",
+    poster: "/images/Moana2.png",
     releaseDate: "May 1, 2026"
   },
   
   {
     id: 107,
-    title: "Tiger 4",
-    poster: "/images/tiger4.png",
+    title: "Raya and the Last Dragon 2",
+    poster: "/images/raya.png",
     releaseDate: "December 20, 2025"
   }
   
