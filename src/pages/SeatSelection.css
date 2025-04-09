@@ -1,0 +1,114 @@
+.seat-selection-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .screen-indicator {
+    margin: 20px auto 10px;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: 2px dashed #aaa;
+    width: fit-content;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .legend-box {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+  
+  .legend-box.recliner { background-color: #f1c40f; }
+  .legend-box.premium { background-color: #5dade2; }
+  .legend-box.regular { background-color: #aab7b8; }
+  
+  .seats-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .seat-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .row-label {
+    width: 20px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+  
+  /* Seat Types */
+  .seat.recliner {
+    background-color: #f1c40f;
+  }
+  .seat.premium {
+    background-color: #5dade2;
+  }
+  .seat.regular {
+    background-color: #aab7b8;
+  }
+  .seat.selected {
+    background-color: #6c5ce7 !important;
+    color: white;
+  }
+  
+  .seat:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .proceed-button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .proceed-button:hover {
+    background-color: #5a4cd0;
+    transform: translateY(-2px);
+  }
+  
+  .proceed-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  

@@ -1,0 +1,124 @@
+.booking-history-container {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #111, #1a1a1a);
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.booking-history-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+.empty-msg {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 40px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.booking-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 100%;
+}
+
+.booking-card:hover {
+  transform: scale(1.02);
+}
+
+.ticket-body {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.ticket-poster {
+  width: 100px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ticket-details {
+  text-align: left;
+  color: #eee;
+  flex-grow: 1;
+}
+
+.ticket-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.ticket-details p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #ccc;
+}
+
+.ticket-actions {
+  padding: 10px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #555, transparent);
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #6c5ce7;
+  color: white;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #5a4cd0;
+}
+
+@media screen and (max-width: 600px) {
+  .booking-history-container h2 {
+    font-size: 2rem;
+  }
+
+  .ticket-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ticket-poster {
+    width: 80%;
+    height: auto;
+  }
+
+  .ticket-details {
+    text-align: center;
+  }
+}
